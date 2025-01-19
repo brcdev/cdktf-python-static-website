@@ -4,11 +4,17 @@ This repo contains CDKTF code using Python to deploy a static html website to S3
 
 ## Project local setup
 1. Make sure node, npm and cdktf are installed
-2. Create venv:
+2. Create & activate venv:
     ```
     python3 -m venv .env
+    source .env/bin/activate
     ```
-3. Set environment variables for AWS authentication:
+3. Install pip dependencies:
+    ```
+    pip install -r requirements.txt
+    ```
+
+4. Set environment variables for AWS authentication:
     ```
     export AWS_ACCESS_KEY_ID=
     export AWS_SECRET_ACCESS_KEY=
@@ -21,12 +27,7 @@ This repo contains CDKTF code using Python to deploy a static html website to S3
     export JSII_SILENCE_WARNING_UNTESTED_NODE_VERSION=true
     ```
 
-2. Activate venv:
-    ```
-    source .venv/bin/activate
-    ```
-
-3. Deploy infrastructure:
+2. Deploy infrastructure:
     ```
     cdktf deploy
     ```
