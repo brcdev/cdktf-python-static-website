@@ -33,6 +33,6 @@ This repo contains CDKTF code using Python to deploy a static html website to S3
     ```
 
 ## Further improvement ideas
-1. Use CloudFront to serve static files and enforce HTTPS
+1. Fine-tune CloudFront distribution's settings
 2. Add unit tests implementation
 3. Implement CI/CD with tf plan reviews and/or approvals
